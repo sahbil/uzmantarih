@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-toolbar>
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxFill>
+            <button md-icon-button (click)="toggleMenu()" class="hamburg-menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+
+            <span>{{ getPageTitle() | translate}}</span>
+
+            <span fxFlex></span>
+
+            <span fxLayout="row" fxLayoutAlign="start center"></span>
+        </div>
+    </mat-toolbar>
+</div>

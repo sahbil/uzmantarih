@@ -1,0 +1,17 @@
+{
+  "NAV": {
+    "CONFIGURATION": "Ayarlar",
+    "ORGANIZATION": {
+      "TITLE": "Bölgeler"
+    },
+    "COMPANY": {
+      "TITLE": "Mıntıkalar"
+    },
+    "DEPARTMENT": {
+      "TITLE": "Şubeler"
+    },
+    "BUSINESS_UNITE": {
+      "TITLE": "Vakıflar"
+    }
+  }
+}

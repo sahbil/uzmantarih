@@ -1,0 +1,33 @@
+@import "theme";
+@import "setting";
+@import "common";
+@import "layout";
+
+.icon {
+    width: 20px;
+    text-align: center;
+    background: white;
+    padding: 0 2px 0 5px;
+    border: none;
+}
+
+:focus {
+    outline: none;
+}
+
+:host {
+    background: white;
+    border: none;
+    padding: 1px 0;
+    display: inline-block;
+}
+
+:host ::ng-deep input {
+    border: none;
+    outline: none;
+    height: 100%;
+    margin: 1px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,20 @@
+<button mat-button fxHide fxShow.gt-xs
+        class="language-button"
+        [matMenuTriggerFor]="languageMenu">
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <img class="flag mr-8" [src]="'assets/images/flags/'+getLanguage()+'.png'">
+        <span class="iso text-uppercase">{{getLanguage()}}</span>
+    </div>
+</button>
+
+<mat-menu #languageMenu="matMenu" [overlapTrigger]="false">
+
+    <button mat-menu-item *ngFor="let lang of getAvailableLanguages()"
+            (click)="switchLanguage(lang)">
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <img class="flag mr-16" [src]="'assets/images/flags/'+lang+'.png'">
+            <span class="iso text-uppercase">{{lang}}</span>
+        </div>
+    </button>
+
+</mat-menu>

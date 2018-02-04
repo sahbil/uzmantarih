@@ -1,0 +1,18 @@
+@import "../../themes/dark/setting";
+
+.hamburg-menu {
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    mat-icon {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+mat-toolbar {
+    background: $toolbar-bg-color;
+    color: $toolbar-txt-color;
+}
