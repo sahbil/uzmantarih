@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "app/core/themes/dark/dark-main";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+app-root, app-admin {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

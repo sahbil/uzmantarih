@@ -9,16 +9,13 @@ import {HttpClient} from "@angular/common/http";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {createTranslateLoader, I18nModule, languageLoader} from "./core/i18n/i18n.module";
 import {I18nService} from "./core/i18n/i18n.service";
-import {OrganizationComponent} from "./dashboard/organization/organization.component";
-import {DashboardComponent} from "./dashboard/dashboard.component";
-import {ConfigurationModule} from "./configuration/configuration.module";
 import {KPYSRoutingModule} from "./core/routing/routing.module";
+import {UzmantarihModule} from "./uzmantarih/uzmantarih.module";
+import {AdminModule} from "./admin/admin.module";
 
 @NgModule({
     declarations: [
-        AppComponent,
-        OrganizationComponent,
-        DashboardComponent
+        AppComponent
     ],
     imports: [
         LoggerModule.forRoot({
@@ -28,7 +25,6 @@ import {KPYSRoutingModule} from "./core/routing/routing.module";
         }),
         KPYSRoutingModule,
         SharedModule,
-        ConfigurationModule,
         UiModule,
         I18nModule,
         TranslateModule.forRoot({
@@ -39,6 +35,8 @@ import {KPYSRoutingModule} from "./core/routing/routing.module";
             },
             isolate: true
         }),
+        UzmantarihModule,
+        AdminModule
     ],
     providers: [
         AppEnvironment,

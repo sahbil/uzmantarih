@@ -1,0 +1,18 @@
+<mat-sidenav-container fxFlex fxFlexFill>
+    <mat-sidenav #sideMenu>
+        <app-menu-bar></app-menu-bar>
+    </mat-sidenav>
+    <div fxLayout="column" fxLayoutAlign="space-between stretch" fxFlexFill>
+        <header>
+            <app-toolbar></app-toolbar>
+        </header>
+
+        <article fxFlex fxFlexFill>
+            <router-outlet></router-outlet>
+        </article>
+
+        <footer>
+            <router-outlet name="footer"></router-outlet>
+        </footer>
+    </div>
+</mat-sidenav-container>

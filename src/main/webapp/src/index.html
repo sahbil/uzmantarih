@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet" />
+        <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"
+              rel="stylesheet"/>
         <style>
             .loading {
                 opacity: 0;
@@ -21,10 +22,12 @@
                 background: #000;
                 z-index: -1;
             }
+
             app-root:empty + .loading {
                 opacity: 1;
                 z-index: 100;
             }
+
             app-root:empty + .loading h1 {
                 color: #eee;
                 font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -39,7 +42,7 @@
     <body>
         <app-root fxLayout="column" fxFill></app-root>
         <div class="loading">
-            <h1>Loading...</h1>
+            <h1>Yükleniyor ...</h1>
         </div>
     </body>
 </html>
