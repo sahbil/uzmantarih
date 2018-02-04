@@ -11,10 +11,10 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
-group = 'org.aliyye'
+group = 'com.uzmantarih'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
